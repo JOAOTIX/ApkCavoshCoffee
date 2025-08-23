@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">App Coffee</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_car">Carrito</string>
+    <string name="title_favorite">Favoritos</string>
+    <string name="title_menu">Menú</string>
+    <string name="btn_iniciar">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">1087346073141-16p4dvpibnuurtgca7jbnduu01blkqrg.apps.googleusercontent.com</string>
+    <string name="producto_image">Producto image</string>
+
+</resources>

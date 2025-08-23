@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_splash">
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_navigation_splash_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_register"
+            app:destination="@id/navigation_register" />
+        <action
+            android:id="@+id/action_navigation_login_to_password"
+            app:destination="@id/navigation_password" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_navigation_register_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_car"
+            app:destination="@id/navigation_carrito" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_favorite"
+            app:destination="@id/navigation_favorite" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_verProducto"
+            app:destination="@id/navigation_verproducto" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_navigation_menu_to_navigation_verproducto"
+            app:destination="@id/navigation_verproducto" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_carrito"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Carrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_car" >
+        <action
+            android:id="@+id/action_navigation_carrito_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Favorite"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_favorite_to_navigation_verproducto"
+            app:destination="@id/navigation_verproducto" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_password"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.Password"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" />
+    <fragment
+        android:id="@+id/navigation_verproducto"
+        android:name="pe.edu.senati.ApkCavoshCoffee.ui.VerProducto"
+        android:label="fragment_ver_producto"
+        tools:layout="@layout/fragment_ver_producto" />
+</navigation>
