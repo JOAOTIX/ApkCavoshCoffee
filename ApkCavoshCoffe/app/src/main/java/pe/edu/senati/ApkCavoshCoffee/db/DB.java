@@ -20,7 +20,7 @@ public class DB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table Usuario(id integer, Nombres text, Correo text, Passwordd text, Login integer)");
-        db.execSQL("create table Producto(id integer, Detalle text, Descripción text, Precio real, Categoria integer, Nuevo integer)");
+        db.execSQL("create table Producto(id integer, Detalle text, Descripción text, Precio real, Categoria integer, Nuevo integer,Favorito integer)");
         db.execSQL("create table Local(id integer, RazonSocial text,Direccion text,idDistrito integer,Distrito text,Horario text,Latitud text,Longitud text)");
         db.execSQL("create table Distrito(id integer,Detalle text)");
 
